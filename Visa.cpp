@@ -99,45 +99,47 @@ public:
     // Set Country Name to class Visa 
     void SetCountryName()
     {
-    std::cout << "Enter Country Name" << std::endl;
-    std::string UserCountryName;
-    std::cin >> UserCountryName;
-    CountryName_ = UserCountryName;
+        std::cout << "Enter Country Name" << std::endl;
+        std::string UserCountryName;
+        std::cin >> UserCountryName;
+        CountryName_ = UserCountryName;
     }
 
     // Set Duration Time to class Visa 
     void SetDurationTime()
     {
-    std::cout << "Enter Duration Time" << std::endl;
-    std::string UserDurationTime;
-    std::cin >> UserDurationTime;
-    DurationTime_ = UserDurationTime;
+        std::cout << "Enter Duration Time" << std::endl;
+        std::string UserDurationTime;
+        std::cin >> UserDurationTime;
+        DurationTime_ = UserDurationTime;
     }
 
     // Display Visa Data
     void Output()
     {
-    for (size_t i = 0; i < CountryName_.size(); i++)
-    {
-        std::cout << CountryName_ << std::endl;
-    }
-    for (size_t i = 0; i < DurationTime_.size(); i++)
-    {
-        std::cout << DurationTime_ << std::endl;
-    }
+        std::cout << std::endl;
+        for (size_t i = 0; i < CountryName_.size(); i++)
+        {
+            std::cout << CountryName_[i];
+        }
+        std::cout << std::endl;
+        for (size_t i = 0; i < DurationTime_.size(); i++)
+        {
+            std::cout << DurationTime_[i];
+        }
     }
 
     // Input Visa Data
     void Input()
     {
-    Visa::SetCountryName();
-    Visa::SetDurationTime();
+        Visa::SetCountryName();
+        Visa::SetDurationTime();
     }
 
     // Destructor
     ~Visa()
     {
-    
+
     }
 };
 
@@ -162,7 +164,7 @@ public:
     // Destructor
     ~ForeignPassport()
     {
-    
+
     };
 };
 
